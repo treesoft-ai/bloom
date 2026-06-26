@@ -1,0 +1,53 @@
+# Backend - Go
+backend/bloom.exe
+backend/src/bloom.exe
+*.exe
+
+# Backend - SQLite
+backend/database/*.db
+backend/database/*.db-shm
+backend/database/*.db-wal
+*.db
+*.db-shm
+*.db-wal
+
+# Environment / Secrets
+.env
+.env.*
+backend/env/.env
+
+# Backend - Go build artifacts
+backend/src/bloom
+
+# Frontend - Dependencies
+frontend/node_modules/
+
+# Frontend - Build output
+frontend/dist/
+frontend/dist-ssr/
+
+# Frontend - Local config
+*.local
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# IDE / Editor
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+*~
