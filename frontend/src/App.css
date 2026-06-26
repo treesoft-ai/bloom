@@ -2232,7 +2232,6 @@
   padding: 80px 20px 40px 20px;
   background-color: var(--bg-primary);
   position: relative;
-  overflow-y: auto;
 }
 
 .customize-content-container {
