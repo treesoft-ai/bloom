@@ -345,7 +345,7 @@ export default function App() {
   const [showAttachMenu, setShowAttachMenu] = useState(false);
   const [showVoiceModal, setShowVoiceModal] = useState(false);
   const [mentionState, setMentionState] = useState<{ active: boolean; query: string; triggerIndex: number; isFromPlusMenu: boolean } | null>(null);
-  const [mentionSearchQuery, setMentionSearchQuery] = useState('');
+
 
   // UI States
   const [isVoiceRecording, setIsVoiceRecording] = useState(false);
@@ -668,7 +668,7 @@ export default function App() {
           triggerIndex: lastAtIdx,
           isFromPlusMenu: false
         });
-        setMentionSearchQuery(textAfterAt);
+
         return;
       }
     }
@@ -698,8 +698,6 @@ export default function App() {
     }
 
     setMentionState(null);
-    setMentionSearchQuery('');
-    
     setTimeout(() => {
       textareaRef.current?.focus();
     }, 50);
@@ -2037,7 +2035,7 @@ export default function App() {
                                 triggerIndex: -1,
                                 isFromPlusMenu: true
                               });
-                              setMentionSearchQuery('');
+
                               setShowAttachMenu(false);
                             }}
                           >
@@ -2739,7 +2737,7 @@ export default function App() {
                                 triggerIndex: -1,
                                 isFromPlusMenu: true
                               });
-                              setMentionSearchQuery('');
+
                               setShowAttachMenu(false);
                             }}
                           >
